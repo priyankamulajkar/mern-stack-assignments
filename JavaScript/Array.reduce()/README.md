@@ -1,4 +1,5 @@
 🧠 Assignment Array.reduce()
+
 ✅ Easy Level ( Understand Accumulator)
 1️⃣ Find Product of All Numbers
 Write a function using reduce() to multiply all numbers in an array.
@@ -64,9 +65,6 @@ Do NOT sort.
 Input: [10, 5, 8, 20, 15]
 
 Output: 15
-
-
-
 
 
 9️⃣ Build a Real “Group By + Count” Dashboard
