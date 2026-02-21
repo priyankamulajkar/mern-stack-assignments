@@ -205,3 +205,22 @@ console.log(findSecondLargest(numbers));
 
 */
 
+/*
+ Build a Real “Group By + Count” Dashboard
+Count how many employees exist in each department.
+const employees = [
+ { name:"A", dept:"IT" },
+ { name:"B", dept:"HR" },
+ { name:"C", dept:"IT" },
+ { name:"D", dept:"Finance" },
+ { name:"E", dept:"HR" }
+];
+
+Output:
+{
+ IT: { count:2, employees:["A","C"] },
+ HR: { count:2, employees:["B","E"] },
+ Finance: { count:1, employees:["D"] }
+}
+*/
+
