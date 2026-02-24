@@ -16,15 +16,17 @@ Output: 24*/
 // const numbers = [2, 3, 4]
 // console.log(findProducts(numbers))
 
-/*
-function findProducts(){
-    const result = numbers.reduce((accumulator, currentValue) =>{
-        return accumulator * currentValue;
-    }, 1);
-    return result;
+console.log(
+  "*******************Find Product of All Numbers******************************",
+);
+function findProducts() {
+  const result = numbers.reduce((accumulator, currentValue) => {
+    return accumulator * currentValue;
+  }, 1);
+  return result;
 }
-const numbers = [2, 3, 4]
-console.log(findProducts());*/
+const numbers = [2, 3, 4];
+console.log(findProducts());
 
 /*
 Count Total Characters in All Words
@@ -33,17 +35,18 @@ Input:  ["hi", "welcome", "js"]
 Output: 11
 */
 
-/*
-function countCharacters(){
-    const count = arr.reduce((acc, currentElement) => {
-        return acc + currentElement.length;
-    }, 0);
-    return count;
-};
-
+console.log(
+  "*******************Count Total Characters in All Words**********************",
+);
+function countCharacters(arr) {
+  const count = arr.reduce((acc, currentElement) => {
+    return acc + currentElement.length;
+  }, 0);
+  return count;
+}
 
 const arr = ["hi", "welcome", "js"];
-console.log(countCharacters(arr));*/
+console.log(countCharacters(arr));
 
 /*
 Convert Array into Comma Separated String (Without join)
@@ -54,11 +57,13 @@ Output: "React,Node,Mongo"
 💡 Hint: accumulator should be a string.
 */
 
-/*
-const arr = ["React", "Node", "Mongo"];
+console.log(
+  "*******************Convert Array into Comma Separated String**********************"
+);
+const arr2 = ["React", "Node", "Mongo"];
 
 function arrayToString(){
-    const result = arr.reduce((accumulator, currentValue) =>{
+    const result = arr2.reduce((accumulator, currentValue) =>{
         if(accumulator == ""){
             return currentValue;
         } else{
@@ -67,8 +72,8 @@ function arrayToString(){
     }, "");
     return result;
 }
-console.log(arrayToString(arr));
-*/
+console.log(arrayToString(arr2));
+
 
 /*
 Count Even and Odd Numbers
@@ -82,11 +87,14 @@ Output:
 }
 */
 
-/*
-const arr = [1,2,3,4,5,6]
+
+console.log(
+  "*******************Count Even and Odd Numbers**********************",
+);
+const arr3 = [1,2,3,4,5,6]
 
 function evenOdd(){
-    const result = arr.reduce((accumulator, currentValue) =>{
+    const result = arr3.reduce((accumulator, currentValue) =>{
         if(currentValue % 2 == 0){
             accumulator.even = accumulator.even + 1;
         } else{
@@ -97,8 +105,8 @@ function evenOdd(){
     return result;
 }
 
-console.log(evenOdd(arr));
-*/
+console.log(evenOdd(arr3));
+
 /*
 Create Map of Word Lengths
 Group words based on their length.
@@ -112,11 +120,15 @@ Output:
 }
 
 💡 Hint: key will be word.length.*/
-/*
-const arr = ["hi", "hello", "js", "reduce"];
+
+console.log(
+  "*******************Create Map of Word Lengths**********************"
+);
+
+const arr4 = ["hi", "hello", "js", "reduce"];
 
 function groupWordLength() {
-  const result = arr.reduce((accumulator, currentWord) => {
+  const result = arr4.reduce((accumulator, currentWord) => {
     const length = currentWord.length;
 
     if (accumulator[length] === undefined) {
@@ -127,8 +139,8 @@ function groupWordLength() {
   }, {});
   return result;
 }
-console.log(groupWordLength(arr));
-*/
+console.log(groupWordLength(arr4));
+
 
 /*
 Find Total Price of Cart
@@ -142,7 +154,10 @@ const cart = [
 Output: 3100
 */
 
-/*
+console.log(
+  "*******************Find Total Price of Cart**********************"
+);
+
 const cart = [
   { name: "Shirt", price: 500, qty: 2 },
   { name: "Shoes", price: 1500, qty: 1 },
@@ -155,9 +170,7 @@ function totalPriceCart(){
     }, 0);
     return result;
 }
-
 console.log(totalPriceCart(cart));
-*/
 
 /*
 Flatten Array Without Using flat()
@@ -166,16 +179,18 @@ Input: [[1,2], [3,4], [5,6]]
 Output: [1,2,3,4,5,6]
 */
 
-/*
-const numbers = [1, 2, 3, 4, 5, 6];
+console.log(
+  "*******************Flatten Array Without Using flat()**********************"
+);
+const numbers2 = [1, 2, 3, 4, 5, 6];
 function flattenArray() {
-  const result = numbers.reduce((accumulator, currentArray) => {
+  const result = numbers2.reduce((accumulator, currentArray) => {
     return accumulator.concat(currentArray);
   }, []);
   return result;
 }
-console.log(flattenArray(numbers));
-*/
+console.log(flattenArray(numbers2));
+
 
 /* 
  Find Second Largest Number
@@ -186,11 +201,13 @@ Output: 15
 
 */
 
-/* 
-const numbers = [10, 5, 8, 20, 15]
+console.log(
+  "*******************Find Second Largest Number**********************"
+);
+const numbers3 = [10, 5, 8, 20, 15]
 
 function findSecondLargest(){
-    const result = numbers.reduce((accumulator, currentValue) => {
+    const result = numbers3.reduce((accumulator, currentValue) => {
         if(currentValue > accumulator.max){
             accumulator.second = accumulator.max;
             accumulator.max = currentValue;
@@ -201,9 +218,7 @@ function findSecondLargest(){
     }, {max: -Infinity, second: -Infinity});
     return result.second;
 }
-console.log(findSecondLargest(numbers));
-
-*/
+console.log(findSecondLargest(numbers3));
 
 /*
  Build a Real “Group By + Count” Dashboard
@@ -223,4 +238,33 @@ Output:
  Finance: { count:1, employees:["D"] }
 }
 */
+console.log(
+  "******************Build a Real “Group By + Count” Dashboard**********************"
+);
+
+const employees = [
+ { name:"A", dept:"IT" },
+ { name:"B", dept:"HR" },
+ { name:"C", dept:"IT" },
+ { name:"D", dept:"Finance" },
+ { name:"E", dept:"HR" }
+];
+
+const result = employees.reduce((accumulator, currentElement) =>{
+    const dept = currentElement.dept;
+
+    // if dept not created create it 
+     if (!accumulator[dept]) {
+        accumulator[dept] = {
+            count: 0,
+            employees: []
+        };
+    }
+        accumulator[dept].count++;
+        accumulator[dept].employees.push(currentElement.name);
+
+        return accumulator;
+}, {});
+console.log(result)
+
 

@@ -12,15 +12,14 @@ Element is 40
 
 💡 Hint: forEach is used when we just want to iterate (like a loop).
 */
-/*
-const arr = [10, 20, 30, 40]
+console.log("**********Print All Elements Using forEach*********");
+const arr = [10, 20, 30, 40];
 function printElements() {
-    arr.forEach(element => {
-        console.log("Element is ", element);
-    });
+  arr.forEach((element) => {
+    console.log("Element is ", element);
+  });
 }
 printElements();
-*/
 
 /*
 Print Index + Value
@@ -34,16 +33,14 @@ Output:
 
 💡 Hint: forEach((value, index) => {})
 */
-/*
-const fruits = ["apple", "banana", "mango"] 
+console.log("**********Print Index + Value**********");
+const fruits = ["apple", "banana", "mango"];
 function printIndexValue() {
-    fruits.forEach((value, index) =>{
-        console.log(index + " -> " + value);
-    })
+  fruits.forEach((value, index) => {
+    console.log(index + " -> " + value);
+  });
 }
 printIndexValue(fruits);
-
-*/
 
 /*
 Check if Array Contains a Negative Number (some)
@@ -54,12 +51,12 @@ Output: true
 💡 Hint: some() stops when condition becomes true.
 
 */
-/*
-const arr =[2, 5, -1, 9];
-function findNegativeNumber(){
-    return arr.some(num => num < 0);
+console.log("*********Negative Number (some)****************");
+const arr2 = [2, 5, -1, 9];
+function findNegativeNumber() {
+  return arr2.some((num) => num < 0);
 }
-console.log(findNegativeNumber(arr));
+console.log(findNegativeNumber(arr2));
 
 // const arr = [2, 5, -1, 9];
 // function findNegativeNumber(arr){
@@ -68,7 +65,6 @@ console.log(findNegativeNumber(arr));
 //     });
 // };
 // console.log(findNegativeNumber(arr));
-*/
 
 /*
 Check if All Students Passed (every)
@@ -78,16 +74,15 @@ Output: false
 
 💡 Hint: every() returns true only if ALL pass condition.
 */
-/*
-const arr = [78, 55, 90, 34, 88];
+console.log("*********Check if All Students Passed****************");
+const arr3 = [78, 55, 90, 34, 88];
 
-function passedStudents(){
-    return arr.every(score =>{
-        return score > 35;
-    });
+function passedStudents() {
+  return arr3.every((score) => {
+    return score > 35;
+  });
 }
-console.log(passedStudents(arr));
-*/
+console.log(passedStudents(arr3));
 
 /*
 Find First Even Number (find)
@@ -97,14 +92,14 @@ Output: 4
 
 💡 Hint: find() returns ONLY the first match.
 */
-/*
-const arr = [1, 7, 9, 4, 6];
+
+console.log("*********Find First Even Number (find)***************");
+const arr4 = [1, 7, 9, 4, 6];
 
 function findEvenNumber() {
-    return arr.find(num => num % 2 ===0);
+  return arr4.find((num) => num % 2 === 0);
 }
-console.log(findEvenNumber(arr));
-*/
+console.log(findEvenNumber(arr4));
 
 /*
 Find a User Object by ID
@@ -122,20 +117,18 @@ Output:
 💡 Hint: Real-world usage of find().
 */
 
-/*
-const arr = [
- {id:1, name:"Anil"},
- {id:2, name:"Neha"},
- {id:3, name:"Rahul"}
-]
+console.log("*********Find a User Object by ID***************");
+const arr5 = [
+  { id: 1, name: "Anil" },
+  { id: 2, name: "Neha" },
+  { id: 3, name: "Rahul" },
+];
 
-function objectFind(arr, id){
-    return arr.find(user => user.id === id);
+function objectFind(arr, id) {
+  return arr5.find((user) => user.id === id);
 }
 
-console.log(objectFind(arr, 3));
-
-*/
+console.log(objectFind(arr5, 3));
 
 /*
 Sort Numbers in Ascending Order (sort)
@@ -146,14 +139,14 @@ Output: [5, 8, 25, 100]
 💡 Hint: Must use compare function (a,b)=>a-b.
 
 */
-/*
-const arr = [100, 5, 25, 8];
+console.log("*********Sort Numbers in Ascending Order (sort)***************");
 
-function sortNumber(arr){
-    return arr.sort((a,b)=> a-b);
+const arr6 = [100, 5, 25, 8];
+
+function sortNumber(arr) {
+  return arr6.sort((a, b) => a - b);
 }
-console.log(sortNumber(arr));
-*/
+console.log(sortNumber(arr6));
 
 /*
 Sort Objects Based on Salary
@@ -174,21 +167,21 @@ Output:
 
 💡 Hint: Custom comparator inside sort().
 */
-/*
-const arr = [
- {name:"A", salary:50000},
- {name:"B", salary:30000},
- {name:"C", salary:70000}
-]
+console.log("*********Sort Objects Based on Salary***************");
 
-// function sortArray(arr){
-//     return arr.sort((a,b)=> a.salary - b.salary);
+const arr7 = [
+  { name: "A", salary: 50000 },
+  { name: "B", salary: 30000 },
+  { name: "C", salary: 70000 },
+];
+
+// function sortArray(arr7){
+//     return arr7.sort((a,b)=> a.salary - b.salary);
 // }
-// console.log(sortArray(arr));
+// console.log(sortArray(arr7));
 
-const result = arr.sort((a,b) => a.salary - b.salary);
+const result = arr7.sort((a, b) => a.salary - b.salary);
 console.log(result);
-*/
 
 /*
 
@@ -207,18 +200,18 @@ Output: true
 
 */
 
-/*
+console.log("*********Out of Stock***************");
+
 const productsArray = [
- {name:"Laptop", stock:5},
- {name:"Mouse", stock:0},
- {name:"Keyboard", stock:10}
+  { name: "Laptop", stock: 5 },
+  { name: "Mouse", stock: 0 },
+  { name: "Keyboard", stock: 10 },
 ];
 
-function anyProductOutOfStock(productsArray){
-    return productsArray.some(product => product.stock == 0)
+function anyProductOutOfStock(productsArray) {
+  return productsArray.some((product) => product.stock == 0);
 }
 console.log(anyProductOutOfStock(productsArray));
-*/
 
 /*
 Flatten Nested Array Using flat
@@ -228,6 +221,7 @@ Output: [1, 2, 3, 4, 5, 6]
 
 💡 Hint: Use flat() (do not use map/filter/reduce).
 */
+console.log("*********Flatten Nested Array Using flat***************");
 
 // const arr = [1, 2, [3, 4], [5, 6]]
 
@@ -235,8 +229,8 @@ Output: [1, 2, 3, 4, 5, 6]
 
 // console.log(result)
 
-const arr = [1, 2, [3, 4], [5, 6]];
-function flatArray(arr){
-    return arr.flat()
+const arr8 = [1, 2, [3, 4], [5, 6]];
+function flatArray(arr) {
+  return arr8.flat();
 }
-console.log(flatArray(arr));
+console.log(flatArray(arr8));
