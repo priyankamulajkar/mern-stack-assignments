@@ -405,8 +405,8 @@ function subtract(...numbers){
 console.log("Sub:",subtract(30, 20));
 
 function multiplyAll(...numbers){
- return numbers.reduce((mul, num) => {
-      return mul * num;
+ return numbers.reduce((multi, num) => {
+      return multi * num;
     });
 }
 console.log("Multiply:",multiplyAll(5, 2));
