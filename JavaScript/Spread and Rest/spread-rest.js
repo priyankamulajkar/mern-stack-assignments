@@ -389,6 +389,7 @@ subtract()
 multiplyAll()
 
 Each should accept unlimited inputs.*/
+console.log("****Create functions using REST:****");
 
 function add(...numbers){
     return numbers.reduce((sum, num) => {
